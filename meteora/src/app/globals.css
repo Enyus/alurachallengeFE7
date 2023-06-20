@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color-black: #000;
+  --primary-color-gray: #ccc;
+  --primary-color-yellow: #daff01;
+  --primary-color-purple: #9353ff;
+  --banner-bg-salmon: #ee6471;
+  --banner-bg-orange: #f87f46;
+}
+
+
+body {
+
+}
