@@ -5,7 +5,7 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
 | -------------  | --- |
 | :sparkles: Nome        | **Alura Challenge Front End 7**
 | :label: Tecnologias | React, NextJS, TypeScript, TailwindCSS
-| :rocket: URL         | TO-DO
+| :rocket: URL         | https://alurachallenge-fe-7.vercel.app/
 
 <div style="display:flex; justify-content: center; margin-bottom: 10px;">
     <a style="margin: 0 10px" href="#-detalhes-do-projeto">Detalhes</a> | 
@@ -33,6 +33,6 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - <a href="https://www.figma.com/file/IVO00we38ZQzTayF7Viimm/Challenge-Front-end-%7C-Loja-Meteora-(Copy)?type=design&node-id=2386%3A3188&mode=design&t=S6Ql9fSE4qJuxw4P-1" target="_blank">Figma</a>
 - <a href="https://trello.com/b/ezN5ADgZ/alura-challenge-fe-7-semana-1" target="_blank">Trello - Semana 1</a>
 - <a href="https://trello.com/b/4nevqD06/alura-challenge-fe-7-semana-2" target="_blank">Trello - Semana 2</a>
-- Deploy
+- <a href="https://alurachallenge-fe-7.vercel.app/">Deploy</a>
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
