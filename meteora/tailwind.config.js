@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         'primary-black': '#000',
+        'secondary-black': '#212529',
         'primary-gray': '#ccc',
         'primary-yellow': '#daff01',
         'primary-purple': '#9353ff',
