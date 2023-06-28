@@ -8,9 +8,9 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
 | :rocket: URL         | TO-DO
 
 <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-    <a style="margin: 0 10px">Detalhes</a> | 
-    <a style="margin: 0 10px">Para Rodar</a> | 
-    <a style="margin: 0 10px">Links</a>
+    <a style="margin: 0 10px" href="#-detalhes-do-projeto">Detalhes</a> | 
+    <a style="margin: 0 10px" href="#-para-rodar-o-projeto">Para Rodar</a> | 
+    <a style="margin: 0 10px" href="#-links">Links</a>
 </div>
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
@@ -30,8 +30,9 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 🔗 Links
-- Figma
-- Trello
+- <a href="https://www.figma.com/file/IVO00we38ZQzTayF7Viimm/Challenge-Front-end-%7C-Loja-Meteora-(Copy)?type=design&node-id=2386%3A3188&mode=design&t=S6Ql9fSE4qJuxw4P-1" target="_blank">Figma</a>
+- <a href="https://trello.com/b/ezN5ADgZ/alura-challenge-fe-7-semana-1" target="_blank">Trello - Semana 1</a>
+- <a href="https://trello.com/b/4nevqD06/alura-challenge-fe-7-semana-2" target="_blank">Trello - Semana 2</a>
 - Deploy
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
