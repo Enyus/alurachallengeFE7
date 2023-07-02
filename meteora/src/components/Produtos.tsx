@@ -9,7 +9,13 @@ import ModalProduto from "./ModalProduto";
 export default function Produtos () {
     let produtos = ProdutosFakeDB;
     let [modalStatus, setModalStatus] = useState(false)
-    let [produtoMostrado, setProdutoMostrado] = useState({})
+    let [produtoMostrado, setProdutoMostrado] = useState({
+        id: 0,
+        nome: '',
+        desc: '',
+        preco: 0,
+        img:''
+    });
 
     return (
         <section className="px-7 md:px-10 lg:px-40 mt-10 mb-10 lg:mb-20">

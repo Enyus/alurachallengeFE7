@@ -42,41 +42,41 @@ export default function ModalProduto(props: modalProps) {
             <div>
                 <p className="text-[13px] pb-4 font-bold">Cores:</p>
                 <ul className="flex text-[13px] gap-4 pb-4 border-b border-primary-gray mb-4">
-                    <div className="flex flex-col">
-                        <input type="radio" id="corAzulClaro" name="cor" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="corAzulClaro" name="cor" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="corAzulClaro">Azul Claro</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="corOffWhite" name="cor" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="corOffWhite" name="cor" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="corOffWhite">Offwhite</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="corPreto" name="cor" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="corPreto" name="cor" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="corPreto">Preto</label>
                     </div>
                 </ul>
             </div>
             <div>
                 <p className="text-[13px] pb-4 font-bold">Tamanho:</p>
-                <ul className="flex text-[13px] gap-4 pb-4 border-b border-primary-gray mb-4">
-                    <div className="flex flex-col">
-                        <input type="radio" id="tamanhoP" name="tamanho" />
+                <ul className="flex text-[13px] gap-4 pb-4 border-b border-primary-gray mb-4 text-center">
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="tamanhoP" name="tamanho" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="tamanhoP">P</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="tamanhoPP" name="tamanho" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="tamanhoPP" name="tamanho" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="tamanhoPP">PP</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="tamanhoM" name="tamanho" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="tamanhoM" name="tamanho" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="tamanhoM">M</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="tamanhoG" name="tamanho" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="tamanhoG" name="tamanho" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="tamanhoG">G</label>
                     </div>
-                    <div className="flex flex-col">
-                        <input type="radio" id="tamanhoGG" name="tamanho" />
+                    <div className="flex flex-col items-center">
+                        <input type="radio" id="tamanhoGG" name="tamanho" className="appearance-none h-[13px] w-[13px] rounded-[50%] border checked:bg-primary-purple" />
                         <label htmlFor="tamanhoGG">GG</label>
                     </div>
                 </ul>
