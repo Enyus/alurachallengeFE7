@@ -1,0 +1,32 @@
+.swiper-button-next {
+    background-image: url('../../public/arrow_next.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    background-image: url('../../public/arrow_previous.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 0%;
+}
+
+.swiper-slide {
+    width: 100vw;
+}

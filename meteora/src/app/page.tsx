@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Carousel from "@/components/Carousel";
 import Categorias from "@/components/Categorias";
 import Facilidades from "@/components/Facilidades";
 import Footer from "@/components/Footer";
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <Carousel />
       <Categorias />
       <Produtos />
       <Facilidades />

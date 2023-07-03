@@ -33,6 +33,10 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - <a href="https://www.figma.com/file/IVO00we38ZQzTayF7Viimm/Challenge-Front-end-%7C-Loja-Meteora-(Copy)?type=design&node-id=2386%3A3188&mode=design&t=S6Ql9fSE4qJuxw4P-1" target="_blank">Figma</a>
 - <a href="https://trello.com/b/ezN5ADgZ/alura-challenge-fe-7-semana-1" target="_blank">Trello - Semana 1</a>
 - <a href="https://trello.com/b/4nevqD06/alura-challenge-fe-7-semana-2" target="_blank">Trello - Semana 2</a>
+- <a href="https://trello.com/b/Skz3kdd1/alura-challenge-fe7-semanas-3-e-4">Trello - Semanas 3 e 4</a>
 - <a href="https://alurachallenge-fe-7.vercel.app/">Deploy</a>
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
+
+## 🛠️ Problemas Conhecidos
+- Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está.
