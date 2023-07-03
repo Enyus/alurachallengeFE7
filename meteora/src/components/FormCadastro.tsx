@@ -1,5 +1,10 @@
-export default function FormCadastro () {
+"use client";
 
+import { useState } from "react";
+import ModalCadastro from "./ModalCadastro";
+
+export default function FormCadastro () {
+let [modalStatus, setModalStatus] = useState(false)
     return (
         <section className="p-7 sm:p-9 lg:py-16 lg:px-[25%]">
             <form className="p-6 border border-black">
@@ -14,11 +19,15 @@ export default function FormCadastro () {
                     />
                     <button
                         className="bg-primary-purple text-white px-4 py-2"
+                        type="button"
+                        onClick={()=>setModalStatus(true)}
                     >
                         Enviar
                     </button>
                 </div>
             </form>
+
+            {modalStatus ? <ModalCadastro onClose={() => setModalStatus(false)} /> : null}
         </section>
     )
 }
