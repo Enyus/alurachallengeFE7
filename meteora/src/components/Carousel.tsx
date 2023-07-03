@@ -1,12 +1,12 @@
 "use client";
 
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "./CustomArrowsForSwiper.css";
-import Image from "next/image";
 
 export default function Carousel() {
   return (
@@ -36,7 +36,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_1_ 375.png"
               width={1440}
               height={415}
-              className="object-fill"
+              className="object-fill w-screen"
             />
           </picture>
         </SwiperSlide>
@@ -55,7 +55,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_2_ 375.png"
               width={1440}
               height={415}
-              className="object-fill"
+              className="object-fill w-screen"
             />
           </picture>
         </SwiperSlide>
@@ -74,7 +74,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_3_ 375.png"
               width={1440}
               height={415}
-              className="object-fill"
+              className="object-fill w-screen"
             />
           </picture>
         </SwiperSlide>

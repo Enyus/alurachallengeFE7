@@ -1,4 +1,3 @@
-import Banner from "@/components/Banner";
 import Carousel from "@/components/Carousel";
 import Categorias from "@/components/Categorias";
 import Facilidades from "@/components/Facilidades";

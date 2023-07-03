@@ -46,7 +46,7 @@ export default function Header() {
         </ul>
       )}
 
-      <div className="md:mr-6 flex gap-3 py-6 bg-white sm:bg-inherit w-screen sm:w-auto justify-center">
+      <div className="md:pr-6 flex gap-3 py-6 bg-white sm:bg-inherit w-screen sm:w-auto justify-center">
         <input
           type="text"
           name="search"
