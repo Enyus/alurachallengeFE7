@@ -11,7 +11,9 @@ export default function Home() {
     <>
       <Header />
       <Carousel />
+      {/* @ts-expect-error Async Server Component */}
       <Categorias />
+      {/* @ts-expect-error Async Server Component */}
       <Produtos />
       <Facilidades />
       <FormCadastro />
