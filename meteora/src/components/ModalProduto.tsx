@@ -8,14 +8,17 @@ interface modalProps {
   nome: string;
   desc: string;
   preco: number;
-  img: string;
+  imgDesktop: string;
+  imgTablet: string;
+  imgMobile: string;
+  categoriaId: number;
   onClose: MouseEventHandler;
 }
 
 export default function ModalProduto(props: modalProps) {
 
   return (
-    <dialog open className="fixed top-0 left-0 right-0 p-1 h-screen rounded-b overflow-y-scroll sm:w-3/4 sm:my-4 bg-transparent sm:overflow-auto">
+    <dialog open className="fixed top-0 left-0 right-0 p-1 h-screen rounded-b overflow-y-scroll sm:w-3/4 sm:my-4 bg-transparent sm:overflow-auto z-10">
       <div className="flex items-center bg-primary-black text-white text-xl rounded-t">
         <FaRegCircleCheck className="text-primary-yellow text-4xl m-4" />
         <p className="mr-auto">Confira detalhes sobre o produto</p>
@@ -28,12 +31,12 @@ export default function ModalProduto(props: modalProps) {
       </div>
       <div className="p-4 sm:flex bg-white">
         <Image
-          src={props.img}
-          width={350}
-          height={422}
-          alt={props.nome}
-          className="object-fill w-full sm:w-1/2"
-        />
+            src={props.imgDesktop}
+            width={350}
+            height={422}
+            alt={props.nome}
+            className="object-contain object-top w-full max-w-[500px] sm:w-1/2"
+        />  
         <div className="py-6 px-2 sm:w-1/2">
             <h3 className="mb-6 font-bold">{props.nome}</h3>
             <p className="text-[13px] pb-6 border-b border-black mb-6">{props.desc}</p>

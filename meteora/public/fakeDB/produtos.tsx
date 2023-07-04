@@ -1,7 +1,10 @@
 export const ProdutosFakeDB = [
     {
         id: 1,
-        img: '/desktop/imagensCards/camiseta.png',
+        imgDesktop: '/desktop/imagensCards/camiseta.png',
+        imgTablet: '/tablet/imagensCards/camiseta.png',
+        imgMobile:'/mobile/imagensCards/camiseta.png',
+        categoriaId: 1,
         nome: 'Camiseta Conforto',
         desc: 'Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.',
         preco: 7000
@@ -9,7 +12,10 @@ export const ProdutosFakeDB = [
 
     {
         id: 2,
-        img: '/desktop/imagensCards/calca.png',
+        imgDesktop: '/desktop/imagensCards/calca.png',
+        imgTablet: '/tablet/imagensCards/calca.png',
+        imgMobile: '/mobile/imagensCards/calca.png',
+        categoriaId: 4,
         nome: 'Calça Alfaiataria',
         desc: 'Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!',
         preco: 18000
@@ -17,7 +23,10 @@ export const ProdutosFakeDB = [
 
     {
         id: 3,
-        img: '/desktop/imagensCards/tenis.png',
+        imgDesktop: '/desktop/imagensCards/tenis.png',
+        imgTablet: '/tablet/imagensCards/tenis.png',
+        imgMobile: '/mobile/imagensCards/tenis.png',
+        categoriaId: 3,
         nome: 'Tênis Chunky',
         desc: 'Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.',
         preco: 25000
@@ -25,7 +34,10 @@ export const ProdutosFakeDB = [
 
     {
         id: 4,
-        img: '/desktop/imagensCards/jaqueta.png',
+        imgDesktop: '/desktop/imagensCards/jaqueta.png',
+        imgTablet: '/tablet/imagensCards/jaqueta.png',
+        imgMobile: '/mobile/imagensCards/jaqueta.png',
+        categoriaId: 5,
         nome: 'Jaqueta Jeans',
         desc: 'Modelo unissex oversized com gola de camurça. Atemporal e autêntica!',
         preco: 15000
@@ -33,7 +45,10 @@ export const ProdutosFakeDB = [
 
     {
         id: 5,
-        img: '/desktop/imagensCards/oculos.png',
+        imgDesktop: '/desktop/imagensCards/oculos.png',
+        imgTablet: '/tablet/imagensCards/oculos.png',
+        imgMobile: '/mobile/imagensCards/oculos.png',
+        categoriaId: 6,
         nome: 'Óculos Redondo',
         desc: 'Armação metálica em grafite com lentes arredondadas. Sem erro!',
         preco: 12000
@@ -41,7 +56,10 @@ export const ProdutosFakeDB = [
 
     {
         id: 6,
-        img: '/desktop/imagensCards/bolsa.png',
+        imgDesktop: '/desktop/imagensCards/bolsa.png',
+        imgTablet: '/desktop/imagensCards/bolsa.png',
+        imgMobile: '/desktop/imagensCards/bolsa.png',
+        categoriaId: 2,
         nome: 'Bolsa Coringa',
         desc: 'Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!',
         preco: 12000
