@@ -1,9 +1,9 @@
 'use client';
 
 import Image from "next/image";
+import { useState } from "react";
 import formatPreco from "../../public/scripts/formatPreco";
 import ModalProduto from "./ModalProduto";
-import { useState } from "react";
 
 interface produtosTypes {
     id: number;
@@ -16,7 +16,7 @@ interface produtosTypes {
     preco: number;
 }
 
-export default function ListaProdutos (produtos: produtosTypes[] | null) {
+export default function ListaProdutos (props: { produtos: produtosTypes[] | null; }) {
     let [modalStatus, setModalStatus] = useState(false);
     let [produtoMostrado, setProdutoMostrado] = useState({
         id: 0,
@@ -29,11 +29,13 @@ export default function ListaProdutos (produtos: produtosTypes[] | null) {
         categoriaId: 0
     });
 
+    console.log(props.produtos);
+
     return (
         <>
             <div className="grid grid-cols-1 flex-wrap gap-3 justify-between sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4" >
 
-                {produtos != null ? produtos.map( produto => {
+                {props.produtos != null ? props.produtos.map( produto => {
                     return (
                         <div key={produto.id} className="w-full max-w-[350px] flex flex-col items-center">
                             <picture>
