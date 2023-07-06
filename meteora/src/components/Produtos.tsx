@@ -22,8 +22,9 @@ export default async function Produtos () {
     let produtosLista: produtosTypes[] | null;
 
     let {data, error}:dataTypes = await supabase
-        .from('produtos')
+        .from('random_produtos')
         .select('*')
+        .limit(8)
 
     // console.log(data)
     // console.log(error)
