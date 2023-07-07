@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {supabase} from "../utils/supabase"
 import { CategoriasFakeDB } from "../../public/fakeDB/categorias";
+import { supabase } from "../utils/supabase";
 
 interface categoriaTypes {
   id: number;
@@ -21,9 +21,6 @@ export default async function Categorias() {
   let {data, error}:dataTypes = await supabase
     .from('categorias')
     .select('*')
-
-    console.log(data)
-    console.log(error)
  
   if (!error) {
     categorias = data;

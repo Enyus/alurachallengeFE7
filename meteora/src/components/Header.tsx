@@ -1,11 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import { FaBars } from "react-icons/fa6";
+import { SearchContext } from "./SearchProvider";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
+  const {search, setSearch} = useContext(SearchContext);
+  const [searchString, setSearchString] = useState("");
 
   const menuList = () => {
     return (
@@ -18,6 +21,12 @@ export default function Header() {
       </ul>
     );
   };
+
+  const handleSubmitSearch = (e: FormEvent) => {
+    e.preventDefault();
+    setSearch(searchString);
+    console.log(search);
+  }
 
   return (
     <header className="w-screen bg-primary-black text-primary-gray flex flex-col md:flex-row items-center justify-between text-xs lg:text-base">
@@ -46,18 +55,27 @@ export default function Header() {
         </ul>
       )}
 
-      <div className="md:pr-6 flex gap-3 py-6 bg-white sm:bg-inherit w-screen sm:w-auto justify-center">
+      <form 
+        className="md:pr-6 flex gap-3 py-6 bg-white sm:bg-inherit w-screen sm:w-auto justify-center"
+        onSubmit={handleSubmitSearch}
+      >
         <input
           type="text"
           name="search"
           id="search"
           placeholder="Digite o produto"
           className="px-4 text-primary-black border border-primary-black"
+          value={searchString}
+          onChange={ (e) => setSearchString(e.target.value)}
+          onFocus={() => setSearchString("")}
         />
-        <button className="px-3 py-2 border border-primary-black md:border-white text-primary-black md:text-inherit">
+        <button 
+          className="px-3 py-2 border border-primary-black md:border-white text-primary-black md:text-inherit"
+          type="submit"
+        >
           Buscar
         </button>
-      </div>
+      </form>
     </header>
   );
 }

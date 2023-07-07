@@ -36,7 +36,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_1_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>
@@ -55,7 +55,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_2_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>
@@ -74,7 +74,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_3_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>

@@ -1,0 +1,19 @@
+Cassio, essa parte do modal, eu tinha anotado isso aqui. Acho que vai resolver, mas tem q testar ali pq n lembro se anotei completo pra resolver kkk
+Tiraria as margins, incluiria um padding e width 100%, alterar background do dialog pra criar a cor do overlay #FFF3 por exemplo (se tiver feito com lib, ver o backdrop dela)
+
+
+Separar
+Obter Dados
+Exibir dados
+
+Parágrafo só com mais de duas linhas!
+
+Revisão no GPT sobre semântica.
+
+Nav no menu do header.
+
+Performance
+
+accent-color - radio button para não confundir o usuário 
+
+Lighthouse no Chrome
