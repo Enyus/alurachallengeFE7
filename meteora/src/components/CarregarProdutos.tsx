@@ -20,24 +20,27 @@ interface dataTypes {
 
 export default async function CarregarProdutos (props: {pesquisa:string | number}) {
     let produtosLista: produtosTypes[] | null = ProdutosFakeDB;
+    console.log(`A pesquisa é: ${props.pesquisa}`);
 
-     switch (typeof (props.pesquisa)) {
-        case "string":
-            if (props.pesquisa == "") {
-                pesquisaGeral();
-            } else {
-                pesquisaPorString(props.pesquisa);
-            }
-            break;
-        case "number":
-            if([1,2,3,4,5,6].some(element => element==props.pesquisa)) {
-                pesquisaPorCategoria(props.pesquisa);
-            }
-            break;
-        case undefined:
-            console.log(props.pesquisa);
-            break;
-    }
+    // switch (typeof (props.pesquisa)) {
+    //     case "string":
+    //         if (props.pesquisa == "") {
+    //             pesquisaGeral();
+    //         } else {
+    //             pesquisaPorString(props.pesquisa);
+    //         }
+    //         break;
+    //     case "number":
+    //         if([1,2,3,4,5,6].some(element => element==props.pesquisa)) {
+    //             pesquisaPorCategoria(props.pesquisa);
+    //         }
+    //         break;
+    //     case undefined:
+    //         console.log(props.pesquisa);
+    //         break;
+    //     default:
+    //         break;
+    // }
 
     async function pesquisaGeral () {
         let {data, error}:dataTypes = await supabase
@@ -81,8 +84,6 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
     }
 
  
-    
-
     return (
         <section className="px-7 md:px-10 lg:px-40 mt-10 mb-10 lg:mb-20">
             <h2 className="text-3xl text-primary-black text-center mb-8">Produtos que estão bombando!</h2>

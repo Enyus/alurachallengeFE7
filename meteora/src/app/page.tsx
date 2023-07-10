@@ -14,10 +14,8 @@ export default function Home() {
     <>
       <SearchProvider>
         <Header />
-      </SearchProvider>
-      <Carousel />
-      <Categorias />
-      <SearchProvider>
+        <Carousel />
+        <Categorias />
         <Produtos />
       </SearchProvider>
       <Facilidades />

@@ -35,8 +35,10 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - <a href="https://trello.com/b/4nevqD06/alura-challenge-fe-7-semana-2" target="_blank">Trello - Semana 2</a>
 - <a href="https://trello.com/b/Skz3kdd1/alura-challenge-fe7-semanas-3-e-4">Trello - Semanas 3 e 4</a>
 - <a href="https://alurachallenge-fe-7.vercel.app/">Deploy</a>
+- <a href="https://alurachallenge-fe-7-git-semanas3e4-enyus.vercel.app/">Preview da branch semanas3e4</a> 
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 🛠️ Problemas Conhecidos
 - Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está.
+- O componente CarregarProdutos.tsx está rodando em loop quando o contexto de Pesquisa é alterado.
