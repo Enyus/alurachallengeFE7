@@ -10,7 +10,7 @@ import "./CustomArrowsForSwiper.css";
 
 export default function Carousel() {
   return (
-    <section className="w-screen">
+    <section className="w-full">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={0}
@@ -18,7 +18,7 @@ export default function Carousel() {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        onSwiper={(swiper: any) => null}
         className="w-full"
       >
         <SwiperSlide>
@@ -36,7 +36,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_1_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>
@@ -55,7 +55,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_2_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>
@@ -74,7 +74,7 @@ export default function Carousel() {
               src="/mobile/banner_carousel_3_ 375.png"
               width={1440}
               height={415}
-              className="object-fill w-screen"
+              className="object-fill w-full"
             />
           </picture>
         </SwiperSlide>

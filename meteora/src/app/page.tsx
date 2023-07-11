@@ -5,14 +5,19 @@ import Footer from "@/components/Footer";
 import FormCadastro from "@/components/FormCadastro";
 import Header from "@/components/Header";
 import Produtos from "@/components/Produtos";
+import SearchProvider from "@/components/SearchProvider";
+
+export const revalidate = 60;
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Carousel />
-      <Categorias />
-      <Produtos />
+      <SearchProvider>
+        <Header />
+        <Carousel />
+        <Categorias />
+        <Produtos />
+      </SearchProvider>
       <Facilidades />
       <FormCadastro />
       <Footer />
