@@ -11,6 +11,7 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
     <a style="margin: 0 10px" href="#-detalhes-do-projeto">Detalhes</a> | 
     <a style="margin: 0 10px" href="#-para-rodar-o-projeto">Para Rodar</a> | 
     <a style="margin: 0 10px" href="#-links">Links</a>
+    <a style="margin: 0 10px" href="#%EF%B8%8F-problemas-conhecidos">Problemas Conhecidos</a>
 </div>
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
@@ -40,5 +41,7 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 🛠️ Problemas Conhecidos
-- Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está.
-- O componente CarregarProdutos.tsx está rodando em loop quando o contexto de Pesquisa é alterado.
+- Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está. (Não resolvido ao usar ```className: w-full``` no componente ```<Image/>``` no carrossel)
+- O componente CarregarProdutos.tsx está rodando em loop quando o contexto de Pesquisa é alterado. (Resolvido com ```<Suspense>```) ✅
+
+<a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>

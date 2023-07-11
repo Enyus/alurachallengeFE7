@@ -1,4 +1,3 @@
-import { ProdutosFakeDB } from "../../public/fakeDB/produtos";
 import { supabase } from "../utils/supabase";
 import ListaProdutos from "./ListaProdutos";
 
@@ -19,28 +18,27 @@ interface dataTypes {
 }
 
 export default async function CarregarProdutos (props: {pesquisa:string | number}) {
-    let produtosLista: produtosTypes[] | null = ProdutosFakeDB;
-    console.log(`A pesquisa é: ${props.pesquisa}`);
+    let produtosLista: produtosTypes[] | null = null;
 
-    // switch (typeof (props.pesquisa)) {
-    //     case "string":
-    //         if (props.pesquisa == "") {
-    //             pesquisaGeral();
-    //         } else {
-    //             pesquisaPorString(props.pesquisa);
-    //         }
-    //         break;
-    //     case "number":
-    //         if([1,2,3,4,5,6].some(element => element==props.pesquisa)) {
-    //             pesquisaPorCategoria(props.pesquisa);
-    //         }
-    //         break;
-    //     case undefined:
-    //         console.log(props.pesquisa);
-    //         break;
-    //     default:
-    //         break;
-    // }
+    switch (typeof (props.pesquisa)) {
+        case "string":
+            if (props.pesquisa == "") {
+                produtosLista = await pesquisaGeral();
+            } else {
+                produtosLista = await pesquisaPorString(props.pesquisa);
+            }
+            break;
+        case "number":
+            if([1,2,3,4,5,6].some(element => element==props.pesquisa)) {
+                produtosLista = await pesquisaPorCategoria(props.pesquisa);
+            }
+            break;
+        case undefined:
+            console.log(props.pesquisa);
+            break;
+        default:
+            break;
+    }
 
     async function pesquisaGeral () {
         let {data, error}:dataTypes = await supabase
@@ -48,11 +46,11 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
             .select('*')
             .limit(8)
         
-        if (!error) {
-            produtosLista = data;
-        } else {
+        if (error) {
             console.log(error);
         }
+
+        return data ;
     }
 
     async function pesquisaPorString(stringProcurada: string | number) {
@@ -62,11 +60,11 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
             .ilike('nome', `%${stringProcurada}%`)
             .limit(8)
         
-        if (!error) {
-            produtosLista = data;
-        } else {
+        if (error) {
             console.log(error);
         }
+
+        return data;
     }
 
     async function pesquisaPorCategoria(idCategoriaProcurada: string | number) {
@@ -77,13 +75,12 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
             .limit(8)
         
         if (!error) {
-            produtosLista = data;
-        } else {
             console.log(error);
         }
-    }
 
- 
+        return data;
+    }
+    
     return (
         <section className="px-7 md:px-10 lg:px-40 mt-10 mb-10 lg:mb-20">
             <h2 className="text-3xl text-primary-black text-center mb-8">Produtos que estão bombando!</h2>

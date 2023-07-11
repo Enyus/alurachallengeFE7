@@ -1,15 +1,15 @@
 'use client';
 
-import { useContext } from "react";
-import { SearchContext } from "./SearchProvider";
+import { Suspense, useContext } from "react";
 import CarregarProdutos from "./CarregarProdutos";
+import { SearchContext } from "./SearchProvider";
 
 export default function Produtos () {
     const {search} = useContext(SearchContext);
-    console.log(search);
 
     return (
-        // <CarregarProdutos pesquisa={search} />
-        <p>{search}</p>
+        <Suspense fallback={<p>Loading...</p>}>
+            <CarregarProdutos pesquisa={search} />
+        </Suspense>
     )
 }

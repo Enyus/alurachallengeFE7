@@ -18,7 +18,7 @@ export default function Carousel() {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        onSwiper={(swiper: any) => null}
         className="w-full"
       >
         <SwiperSlide>

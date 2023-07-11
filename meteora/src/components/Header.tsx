@@ -25,7 +25,6 @@ export default function Header() {
   const handleSubmitSearch = (e: FormEvent) => {
     e.preventDefault();
     setSearch(searchString);
-    console.log(search);
   }
 
   return (
