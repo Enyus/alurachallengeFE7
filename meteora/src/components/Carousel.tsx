@@ -10,7 +10,7 @@ import "./CustomArrowsForSwiper.css";
 
 export default function Carousel() {
   return (
-    <section className="w-screen">
+    <section className="w-full">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={0}

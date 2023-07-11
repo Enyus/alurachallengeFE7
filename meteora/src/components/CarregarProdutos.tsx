@@ -71,10 +71,10 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
         let {data, error}:dataTypes = await supabase
             .from('random_produtos')
             .select('*')
-            .eq('id', idCategoriaProcurada)
+            .eq('categoriaId', idCategoriaProcurada)
             .limit(8)
         
-        if (!error) {
+        if (error) {
             console.log(error);
         }
 

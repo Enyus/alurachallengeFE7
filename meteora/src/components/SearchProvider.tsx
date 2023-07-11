@@ -4,7 +4,7 @@ import { ReactNode, SetStateAction, createContext, useState } from "react";
 
 interface searchContextTypes {
     search: string | number;
-    setSearch: React.Dispatch<SetStateAction<string>>
+    setSearch: React.Dispatch<SetStateAction<any>>
 }
 
 export const SearchContext = createContext<searchContextTypes>({

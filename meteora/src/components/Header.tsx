@@ -28,7 +28,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-screen bg-primary-black text-primary-gray flex flex-col md:flex-row items-center justify-between text-xs lg:text-base">
+    <header className="w-full bg-primary-black text-primary-gray flex flex-col md:flex-row items-center justify-between text-xs lg:text-base">
       <div className="w-screen md:w-auto max-w-[320px] flex items-center justify-between">
         <div className="relative h-8 md:h-6 w-28 md:w-36 ml-6 mr-10 md:mr-4">
           <Image

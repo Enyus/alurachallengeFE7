@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { CategoriasFakeDB } from "../../public/fakeDB/categorias";
 import { supabase } from "../utils/supabase";
+import CartaoCategoria from "./CartaoCategoria";
 
 interface categoriaTypes {
   id: number;
@@ -37,20 +37,14 @@ export default async function Categorias() {
 
         {categorias != null ? categorias.map((categoria) => {
           return (
-            <button className="block w-full max-w-[160px]" key={categoria.id}>
-              <picture>
-                <source srcSet={categoria.imgDesktop} media="(min-width: 1024px)" />
-                <source srcSet={categoria.imgTablet} media="(min-width: 768px)" />
-                <Image
-                  src={categoria.imgMobile}
-                  alt={`Categoria ${categoria.nome}`}
-                  width={160}
-                  height={157}
-                  className="object-fill w-full"
-                />
-              </picture>
-              <p className="bg-primary-black text-white h-[35px] flex items-center justify-center">{categoria.nome}</p>
-            </button>
+            <CartaoCategoria
+              id={categoria.id}
+              key={categoria.id}
+              imgDesktop={categoria.imgDesktop}
+              imgTablet={categoria.imgTablet}
+              imgMobile={categoria.imgMobile}
+              nome={categoria.nome}
+            />
           );
         }) : null}
 
