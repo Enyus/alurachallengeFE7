@@ -1,4 +1,4 @@
-export default function Footer () {
+export default function Rodape () {
 
     return (
         <footer className="w-full bg-black text-white py-4 px-16 text-center text-sm font-normal">

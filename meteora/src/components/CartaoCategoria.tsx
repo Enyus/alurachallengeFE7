@@ -18,17 +18,25 @@ export default function CartaoCategoria (props: categoriaTypes) {
     const [ativo, setAtivo] = useState(false);
     
     const handleClick = () => {
+        const listaBotoesCategoria:HTMLCollection = document.getElementsByClassName('cardCategoria');
+        for (let i=0 ; i<listaBotoesCategoria.length ; i++) {
+          listaBotoesCategoria[i].classList.remove('border-4');
+          listaBotoesCategoria[i].classList.remove('border-primary-purple');
+          listaBotoesCategoria[i].classList.remove('scale-110');
+        }
+
         if (ativo) {
           setSearch("");
+          setAtivo(false);
         } else {
           setSearch(props.id);
+          setAtivo(true);
         }
-        setAtivo(!ativo);
     }
 
     return (
         <button 
-            className={`block w-full max-w-[160px] ${ativo ? "border-4 border-primary-purple scale-110" : "" }`} 
+            className={`cardCategoria block w-full max-w-[160px] ${ativo ? "border-4 border-primary-purple scale-110" : "" }`} 
             key={props.key}
             onClick={handleClick}
         >

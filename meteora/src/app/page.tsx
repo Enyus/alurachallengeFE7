@@ -1,11 +1,11 @@
-import Carousel from "@/components/Carousel";
+import Carrossel from "@/components/Carrossel";
 import Categorias from "@/components/Categorias";
 import Facilidades from "@/components/Facilidades";
-import Footer from "@/components/Footer";
 import FormCadastro from "@/components/FormCadastro";
-import Header from "@/components/Header";
+import Cabecalho from "@/components/Cabecalho";
 import Produtos from "@/components/Produtos";
 import SearchProvider from "@/components/SearchProvider";
+import Rodape from "@/components/Rodape";
 
 export const revalidate = 60;
 
@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <>
       <SearchProvider>
-        <Header />
-        <Carousel />
+        <Cabecalho />
+        <Carrossel />
         <Categorias />
         <Produtos />
       </SearchProvider>
       <Facilidades />
       <FormCadastro />
-      <Footer />
+      <Rodape />
     </>
   )
 }

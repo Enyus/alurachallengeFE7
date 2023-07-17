@@ -5,14 +5,14 @@ import { FormEvent, useContext, useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { SearchContext } from "./SearchProvider";
 
-export default function Header() {
+export default function Cabecalho() {
   const [menu, setMenu] = useState(false);
   const {search, setSearch} = useContext(SearchContext);
   const [searchString, setSearchString] = useState("");
 
   const menuList = () => {
     return (
-      <ul className="fixed top-0 right-0 bg-[#343A40] px-6 py-4 text-base items-center gap-10 md:gap-4 md:flex mr-auto">
+      <ul className="fixed top-0 right-0 bg-[#343A40] px-6 py-4 text-base items-center gap-10 md:gap-4 md:flex">
         <li className="text-primary-yellow font-bold text-right text-2xl sm:hidden" onClick={() => setMenu(false)}>X</li>
         <li className="border-b-[1px] border-white py-2 text-primary-yellow"><a href="#">Home</a></li>
         <li className="border-b-[1px] border-white py-2"><a href="#">Nossas lojas</a></li>
@@ -45,14 +45,16 @@ export default function Header() {
         />
       </div>
 
-      {menu ? menuList() : (
-        <ul className="hidden items-center gap-10 md:gap-4 md:flex mr-auto">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Nossas lojas</a></li>
-          <li><a href="#">Novidades</a></li>
-          <li><a href="#">Promoções</a></li>
-        </ul>
-      )}
+      <nav className="mr-auto z-10">
+        {menu ? menuList() : (
+          <ul className="hidden items-center gap-10 md:gap-4 md:flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nossas lojas</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Promoções</a></li>
+          </ul>
+        )}
+      </nav>
 
       <form 
         className="md:pr-6 flex gap-3 py-6 bg-white sm:bg-inherit w-screen sm:w-auto justify-center"
