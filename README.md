@@ -11,7 +11,8 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
     <a style="margin: 0 10px" href="#-detalhes-do-projeto">Detalhes</a> | 
     <a style="margin: 0 10px" href="#-para-rodar-o-projeto">Para Rodar</a> | 
     <a style="margin: 0 10px" href="#-links">Links</a> |
-    <a style="margin: 0 10px" href="#%EF%B8%8F-problemas-conhecidos">Problemas Conhecidos</a>
+    <a style="margin: 0 10px" href="#%EF%B8%8F-problemas-conhecidos">Problemas Conhecidos</a> |
+    <a style="margin: 0 10px" href="">Code Review</a>
 </div>
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
@@ -44,5 +45,16 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está. (Não resolvido ao usar ```className: w-full``` no componente ```<Image/>``` no carrossel) (Resolvido ao usar ```className: w-full``` em todos os componentes de ```<section>```) ✅
 - O componente CarregarProdutos.tsx está rodando em loop quando o contexto de Pesquisa é alterado. (Resolvido com ```<Suspense>```) ✅
 - Falta encontrar um meio de desativar o estado ```ativo``` nos botôes das categorias quando se clica em outra categoria.
+
+<a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
+
+## 👩‍🏫 Recomendações Code Review
+- Colocar um backdrop nas modais;
+- Separar o código em mais componentes, especialmente com relação aos tags verbosos do Tailwind;
+- Tag ```<p>``` apenas para textos com duas linhas ou mais, caso contrário usar ```<span>```;
+- Conferir a semântica usando IA (Chat GPT);
+- Usar tag ```<nav>``` no header;
+- Conferir performance no ***lighthouse*** do Chrome;
+- Nas modais de produtos, alterar os radio buttons para que a cor de fundo não confunda o usuário (accent-color);
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
