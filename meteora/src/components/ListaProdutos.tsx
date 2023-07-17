@@ -50,7 +50,7 @@ export default function ListaProdutos (props: { produtos: produtosTypes[] | null
                             <div className="m-4">
                                 <h3 className="font-bold mb-[15px]">{produto.nome}</h3>
                                 <p className="mb-[15px] text-[13px] text-secondary-black">{produto.desc}</p>
-                                <p className="font-bold mb-[10px]">{formatPreco(produto.preco / 100)}</p>
+                                <span className="block font-bold mb-[10px]">{formatPreco(produto.preco / 100)}</span>
                                 <button 
                                     className="text-white bg-primary-purple px-4 py-2 font-medium"
                                     onClick={()=>{

@@ -51,11 +51,11 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 👩‍🏫 Recomendações Code Review
-- Colocar um backdrop nas modais;
+- Colocar um backdrop nas modais; ✅
 - Separar o código em mais componentes, especialmente com relação aos tags verbosos do Tailwind;
-- Tag ```<p>``` apenas para textos com duas linhas ou mais, caso contrário usar ```<span>```;
-- Conferir a semântica usando IA (Chat GPT);
-- Usar tag ```<nav>``` no header;
+- Tag ```<p>``` apenas para textos com duas linhas ou mais, caso contrário usar ```<span>```; ✅
+- Conferir a semântica usando IA (Chat GPT); ✅ (<a href="">Veja Aqui</a>)
+- Usar tag ```<nav>``` no header; ✅
 - Conferir performance no ***lighthouse*** do Chrome;
 - Nas modais de produtos, alterar os radio buttons para que a cor de fundo não confunda o usuário (accent-color);
 

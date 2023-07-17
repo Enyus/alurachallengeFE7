@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./CustomArrowsForSwiper.css";
 
-export default function Carrosel2() {
+export default function Carrosel() {
   return (
     <section className="w-full">
       <Swiper

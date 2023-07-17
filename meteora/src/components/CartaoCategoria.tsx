@@ -14,7 +14,7 @@ interface categoriaTypes {
   }
 
 export default function CartaoCategoria (props: categoriaTypes) {
-    const {search, setSearch} = useContext(SearchContext);
+    const {setSearch} = useContext(SearchContext);
     const [ativo, setAtivo] = useState(false);
     
     const handleClick = () => {
@@ -51,7 +51,7 @@ export default function CartaoCategoria (props: categoriaTypes) {
                   className="object-fill w-full"
                 />
               </picture>
-              <p className="bg-primary-black text-white h-[35px] flex items-center justify-center">{props.nome}</p>
+              <span className="bg-primary-black text-white h-[35px] flex items-center justify-center">{props.nome}</span>
         </button>
     )
 };

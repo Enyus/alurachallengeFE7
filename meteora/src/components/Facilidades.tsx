@@ -16,7 +16,7 @@ export default function Facilidades () {
                         className="object-contain"
                     />
                     <div className="flex flex-col justify-between">
-                        <p className="text-primary-yellow font-bold">PAGUE PELO PIX</p>
+                        <span className="text-primary-yellow font-bold">PAGUE PELO PIX</span>
                         <p className="text-[13px]">Ganhe 5% OFF em pagamentos via PIX</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export default function Facilidades () {
                         className="object-contain"
                     />
                     <div className="flex flex-col justify-between">
-                        <p className="text-primary-yellow font-bold">TROCA GRÁTIS</p>
+                        <span className="text-primary-yellow font-bold">TROCA GRÁTIS</span>
                         <p className="text-[13px]">Fique livre para trocar em até 30 dias.</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function Facilidades () {
                         className="object-contain"
                     />
                     <div className="flex flex-col justify-between">
-                        <p className="text-primary-yellow font-bold">SUSTENTABILIDADE</p>
+                        <span className="text-primary-yellow font-bold">SUSTENTABILIDADE</span>
                         <p className="text-[13px]">Moda responsável, que respeita o meio ambiente.</p>
                     </div>
                 </div>
