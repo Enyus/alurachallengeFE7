@@ -3,7 +3,7 @@
 import { FormEvent, useContext, useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { SearchContext } from "../SearchProvider";
-import MenuLista from "./menuLista";
+import MenuLista from "./MenuLista";
 import Logo from "./Logo";
 import FormularioCabecalho from "./FormularioCabecalho";
 
