@@ -2,7 +2,7 @@ import Carrossel from "@/components/Carrossel";
 import Categorias from "@/components/Categorias";
 import Facilidades from "@/components/Facilidades";
 import FormCadastro from "@/components/FormCadastro";
-import Cabecalho from "@/components/Cabecalho";
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Produtos from "@/components/Produtos";
 import SearchProvider from "@/components/SearchProvider";
 import Rodape from "@/components/Rodape";
