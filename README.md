@@ -12,7 +12,8 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
     <a style="margin: 0 10px" href="#-para-rodar-o-projeto">Para Rodar</a> | 
     <a style="margin: 0 10px" href="#-links">Links</a> |
     <a style="margin: 0 10px" href="#%EF%B8%8F-problemas-conhecidos">Problemas Conhecidos</a> |
-    <a style="margin: 0 10px" href="#-recomendações-code-review">Code Review</a>
+    <a style="margin: 0 10px" href="#-recomendações-code-review">Code Review</a> | 
+    <a style="margin: 0 10px" href="#">Recomendações IA</a>
 </div>
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
@@ -37,20 +38,21 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - <a href="https://trello.com/b/4nevqD06/alura-challenge-fe-7-semana-2" target="_blank">Trello - Semana 2</a>
 - <a href="https://trello.com/b/Skz3kdd1/alura-challenge-fe7-semanas-3-e-4">Trello - Semanas 3 e 4</a>
 - <a href="https://alurachallenge-fe-7.vercel.app/">Deploy</a>
-- <a href="https://alurachallenge-fe-7-git-semanas3e4-enyus.vercel.app/">Preview da branch semanas3e4</a> 
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 🛠️ Problemas Conhecidos
 - Existe algum espaçamento errado no Carrosel com o Swiper que eu ainda não consegui encontrar onde está. (Não resolvido ao usar ```className: w-full``` no componente ```<Image/>``` no carrossel) (Resolvido ao usar ```className: w-full``` em todos os componentes de ```<section>```) ✅
 - O componente CarregarProdutos.tsx está rodando em loop quando o contexto de Pesquisa é alterado. (Resolvido com ```<Suspense>```) ✅
-- Falta encontrar um meio de desativar o estado ```ativo``` nos botôes das categorias quando se clica em outra categoria.
-    - Consegui retirar as classes usando manipulação do dom com JS puro, mas agora por algum motivo nem sempre quando se clica no botão da categoria, o clique é efetivado.
-    - Talvez o problema seja que o app esteja lendo o estado ```ativo``` (um booleano) de cada botão, então tem mais de um botão "ativo" ao mesmo tempo. Tentar alterar o estado em um componente de nível superior e/ou com valor diferente de booleano.
+- Falta encontrar um meio de desativar o estado ```ativo``` nos botôes das categorias quando se clica em outra categoria. ✅
+    - Consegui retirar as classes usando manipulação do dom com JS puro, mas agora por algum motivo nem sempre quando se clica no botão da categoria, o clique é efetivado. ❌
+    - Talvez o problema seja que o app esteja lendo o estado ```ativo``` (um booleano) de cada botão, então tem mais de um botão "ativo" ao mesmo tempo. Tentar alterar o estado em um componente de nível superior e/ou com valor diferente de booleano. ❌
+    - Foi necessário usar um novo Context para a categoria ativa. ✅
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
 ## 👩‍🏫 Recomendações Code Review
+Em 06/07/2023, foi feita uma live de revisão de código pelos instrutores da Alura, os pontos abaixo foram os indicados para melhorar neste projeto:
 - Padronizar o uso da lingua no código; ✅
 - Colocar um backdrop nas modais; ✅
 - Separar o código em mais componentes, especialmente com relação aos tags verbosos do Tailwind;
@@ -59,5 +61,16 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 - Usar tag ```<nav>``` no header; ✅
 - Conferir performance no ***lighthouse*** do Chrome;
 - Nas modais de produtos, alterar os radio buttons para que a cor de fundo não confunda o usuário (accent-color);
+
+<a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
+
+## 🤖 Recomendações do ChatGPT
+Conforme recomendado pelos instrutores, pedi ao ChatGPT que revisasse a semântica do meu código (o HTML final gerado) e estas foram as recomendações da IA:
+- Usar tags semânticas; ✅
+- Usar atributo ```alt``` nas imagens. (Já exigido pelo componente ```<Image>``` do next); ✅
+- Usar Listas para navegação; ✅
+- Adicionar rótulos aos formulários;
+- Legibilidade do Código;
+- Otimizar Imagens. ✅
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
