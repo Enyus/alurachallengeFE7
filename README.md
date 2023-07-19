@@ -13,7 +13,7 @@ Repositório para guardar o código do site da Meteora, envolvida no Challenge F
     <a style="margin: 0 10px" href="#-links">Links</a> |
     <a style="margin: 0 10px" href="#%EF%B8%8F-problemas-conhecidos">Problemas Conhecidos</a> |
     <a style="margin: 0 10px" href="#-recomendações-code-review">Code Review</a> | 
-    <a style="margin: 0 10px" href="#">Recomendações IA</a>
+    <a style="margin: 0 10px" href="#-recomendações-do-chatgpt">Recomendações IA</a>
 </div>
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
