@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./CustomArrowsForSwiper.css";
+import "../../public/styles/CustomArrowsForSwiper.css";
 
 export default function Carrosel() {
   return (
@@ -18,7 +18,6 @@ export default function Carrosel() {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        onSwiper={(swiper: any) => null}
         className="w-full"
       >
         <SwiperSlide>
