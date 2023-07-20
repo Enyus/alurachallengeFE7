@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { banners } from "../../public/fakeDB/banners";
 import "../../public/styles/CustomArrowsForSwiper.css";
 
 export default function Carrosel() {
@@ -20,63 +21,30 @@ export default function Carrosel() {
         pagination={{ clickable: true }}
         className="w-full"
       >
-        <SwiperSlide>
-          <picture>
-            <source
-              srcSet="/desktop/banner_carousel_1_1440.png"
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcSet="/tablet/banner_carousel_1_768.png"
-              media="(min-width: 768px)"
-            />
-            <Image
-              alt="Banner 1"
-              src="/mobile/banner_carousel_1_ 375.png"
-              width={1440}
-              height={415}
-              className="object-fill w-full"
-            />
-          </picture>
-        </SwiperSlide>
-        <SwiperSlide>
-          <picture>
-            <source
-              srcSet="/desktop/banner_carousel_2_1440.png"
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcSet="/tablet/banner_carousel_2_768.png"
-              media="(min-width: 768px)"
-            />
-            <Image
-              alt="Banner 2"
-              src="/mobile/banner_carousel_2_ 375.png"
-              width={1440}
-              height={415}
-              className="object-fill w-full"
-            />
-          </picture>
-        </SwiperSlide>
-        <SwiperSlide>
-          <picture>
-            <source
-              srcSet="/desktop/banner_carousel_3_1440.png"
-              media="(min-width: 1024px)"
-            />
-            <source
-              srcSet="/tablet/banner_carousel_3_768.png"
-              media="(min-width: 768px)"
-            />
-            <Image
-              alt="Banner 3"
-              src="/mobile/banner_carousel_3_ 375.png"
-              width={1440}
-              height={415}
-              className="object-fill w-full"
-            />
-          </picture>
-        </SwiperSlide>
+        {banners.map( banner => {
+          return (
+            <SwiperSlide key={banner.id}>
+              <picture>
+                <source
+                  srcSet={banner.imgDesktop}
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcSet={banner.imgTablet}
+                  media="(min-width: 768px)"
+                />
+                <Image
+                  alt={`Banner ${banner.id}`}
+                  src={banner.imgMobile}
+                  width={1440}
+                  height={415}
+                  className="object-fill w-full"
+                />
+              </picture>
+            </SwiperSlide>
+          )
+        })}
+        
       </Swiper>
     </section>
   );
