@@ -4,6 +4,8 @@ import pesquisaGeral from "@/utils/pesquisaGeral";
 import pesquisaPorString from "@/utils/pesquisaPorString";
 import pesquisaPorCategoria from "@/utils/pesquisaPorCategoria";
 
+export const revalidate = false;
+
 export default async function CarregarProdutos (props: {pesquisa:string | number}) {
     let produtosLista: produtosTypes[] | null = null;
     let tituloListaProdutos = "Produtos que estão bombando!";
@@ -22,9 +24,6 @@ export default async function CarregarProdutos (props: {pesquisa:string | number
                 produtosLista = await pesquisaPorCategoria(props.pesquisa);
                 tituloListaProdutos = "Resultado da Pesquisa:"
             }
-            break;
-        case undefined:
-            console.log(props.pesquisa);
             break;
         default:
             break;

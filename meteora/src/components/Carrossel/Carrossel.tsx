@@ -6,8 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { banners } from "../../public/fakeDB/banners";
-import "../../public/styles/CustomArrowsForSwiper.css";
+import { banners } from "../../../public/fakeDB/banners";
+import "../../../public/styles/CustomArrowsForSwiper.css";
 
 export default function Carrosel() {
   return (

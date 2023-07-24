@@ -48,6 +48,8 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
     - Consegui retirar as classes usando manipulação do dom com JS puro, mas agora por algum motivo nem sempre quando se clica no botão da categoria, o clique é efetivado. ❌
     - Talvez o problema seja que o app esteja lendo o estado ```ativo``` (um booleano) de cada botão, então tem mais de um botão "ativo" ao mesmo tempo. Tentar alterar o estado em um componente de nível superior e/ou com valor diferente de booleano. ❌
     - Foi necessário usar um novo Context para a categoria ativa. ✅
+- Um erro de renderização está acontecendo, porque na ```<ListaProdutos>``` a propriedade srcSet/src está diferente no servidor e no cliente.
+    - ```revalidate``` não funcionou. ❌
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
@@ -55,12 +57,12 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
 Em 06/07/2023, foi feita uma live de revisão de código pelos instrutores da Alura, os pontos abaixo foram os indicados para melhorar neste projeto:
 - Padronizar o uso da lingua no código; ✅
 - Colocar um backdrop nas modais; ✅
-- Separar o código em mais componentes, especialmente com relação aos tags verbosos do Tailwind;
+- Separar o código em mais componentes, especialmente com relação aos tags verbosos do Tailwind; ✅
 - Tag ```<p>``` apenas para textos com duas linhas ou mais, caso contrário usar ```<span>```; ✅
 - Conferir a semântica usando IA (Chat GPT); ✅ (<a href="https://github.com/Enyus/alurachallengeFE7/blob/main/opiniaoGPT.md">Veja Aqui</a>)
 - Usar tag ```<nav>``` no header; ✅
 - Conferir performance no ***lighthouse*** do Chrome;
-- Nas modais de produtos, alterar os radio buttons para que a cor de fundo não confunda o usuário (accent-color);
+- Nas modais de produtos, alterar os radio buttons para que a cor de fundo não confunda o usuário (accent-color); ✅
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 
@@ -69,8 +71,8 @@ Conforme recomendado pelos instrutores, pedi ao ChatGPT que revisasse a semânti
 - Usar tags semânticas; ✅
 - Usar atributo ```alt``` nas imagens. (Já exigido pelo componente ```<Image>``` do next); ✅
 - Usar Listas para navegação; ✅
-- Adicionar rótulos aos formulários;
-- Legibilidade do Código;
+- Adicionar rótulos aos formulários; ✅
+- Legibilidade do Código; ✅
 - Otimizar Imagens. ✅
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>

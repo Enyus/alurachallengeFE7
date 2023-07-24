@@ -2,7 +2,7 @@
 
 import { Suspense, useContext } from "react";
 import CarregarProdutos from "./CarregarProdutos";
-import { SearchContext } from "./Contextos/SearchProvider";
+import { SearchContext } from "../Contextos/SearchProvider";
 
 export default function Produtos () {
     const {search} = useContext(SearchContext);
