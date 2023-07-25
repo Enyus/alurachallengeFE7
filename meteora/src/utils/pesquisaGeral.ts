@@ -3,7 +3,7 @@ import dataProdutosTypes from "@/utils/dataProdutosTypes";
 
 export default async function pesquisaGeral () {
     let {data, error}:dataProdutosTypes = await supabase
-        .from('random_produtos')
+        .from('produtos')
         .select('*')
         .limit(8)
     

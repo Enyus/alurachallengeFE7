@@ -16,6 +16,7 @@ export default function Logo () {
                     alt="Logo da loja Meteora"
                     src="/mobile/logo_mobile.png"
                     fill
+                    sizes="(min-width: 768px) 100px, (min-width: 1024px) 130px, 125px"
                 />
             </picture>
         </div>

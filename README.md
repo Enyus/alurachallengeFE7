@@ -50,6 +50,8 @@ O objetivo do desafio é criar o front end do site de comércio de roupas Meteor
     - Foi necessário usar um novo Context para a categoria ativa. ✅
 - Um erro de renderização está acontecendo, porque na ```<ListaProdutos>``` a propriedade srcSet/src está diferente no servidor e no cliente.
     - ```revalidate``` não funcionou. ❌
+    - ```suppressHydrationWarning={true}``` não funcionou. ❌
+    - O problema parece ser com o uso da tabela ```random_produtos``` do supabase, especificamente quando uso a função ```pesquisaGeral()```. Este tinha sido o artifício encontrado para criar aleatoriedade na apresentação dos produtos. Estranhamente, porém, o mesmo não parece ocorrer com as outras funções de pesquisa. Vou fazer mais alguns testes pra ver se é isso mesmo.
 
 <a href="#" style="display:flex; justify-content: end"> ⬆️Topo⬆️</a>
 

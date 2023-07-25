@@ -1,6 +1,6 @@
 import Carrossel from "@/components/Carrossel/Carrossel";
 import Categorias from "@/components/Categorias/Categorias";
-import Facilidades from "@/components/Facilidades";
+import Facilidades from "@/components/Facilidades/Facilidades";
 import FormCadastro from "@/components/Cadastro/FormCadastro";
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Produtos from "@/components/Produtos/Produtos";
